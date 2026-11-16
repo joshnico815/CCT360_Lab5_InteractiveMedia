@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Calm Ocean Waves in Cebu, Philippines</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<main>
+
+    <h1>Calm Ocean Waves in Cebu, Philippines</h1>
+
+    <!-- Section 1: Visualscape -->
+    <section>
+
+        <h2>Interactive Ocean Video</h2>
+
+        <video id="videoPlayer" loop>
+          <!-- Video sourced from: https://pixabay.com/videos/waterfall-swimming-bolinao-falls-158411/ (Note: Video has no audio)-->
+            <source src="video/waterfalls.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <br><br>
+
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="stopBtn">Stop</button>
+        <button id="effectBtn">Effect</button>
+
+        <p>
+            Volume:
+            <input type="range" id="videoVolume" min="0" max="1" step="0.05" value="0.8">
+        </p>
+
+        <p class="status" id="videoMessage">
+            Video ready to play.
+        </p>
+
+    </section>
+
+
+    <!-- Section 2: Interactive Ocean Animation -->
+    <section>
+
+        <h2>Interactive Ocean Animation</h2>
+
+        <p>Click the buttons to change the ocean animation.</p>
+
+        <div class="visual-scene" id="oceanScene">
+
+            <div class="sun"></div>
+            <div class="waves"></div>
+
+        </div>
+
+        <br>
+
+        <button id="animateBtn">Move Waves</button>
+        <button id="calmBtn">Calm Ocean</button>
+
+    </section>
+
+
+    <!-- Section 3: Soundscape -->
+    <section>
+
+        <h2>Ocean Soundscape</h2>
+
+        <audio id="audioPlayer">
+          <!-- Audio sourced from: https://pixabay.com/sound-effects/nature-ocean-philippines-calm-waves-cebub-29358/ -->
+            <source src="audio/freesound_community-ocean-philippines-calm-waves-cebub-29358.mp3" type="audio/mpeg">
+        </audio>
+
+        <button id="audioPlay">Play Sound</button>
+        <button id="audioPause">Pause Sound</button>
+        <button id="audioStop">Stop Sound</button>
+
+        <p>
+            Volume:
+            <input type="range" id="audioVolume" min="0" max="1" step="0.05" value="0.8">
+        </p>
+
+        <p class="status" id="audioMessage">
+            Ocean sound ready.
+        </p>
+
+    </section>
+
+</main>
+
+</body>
+
+</html>
